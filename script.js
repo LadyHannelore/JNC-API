@@ -8,7 +8,7 @@
 
 class BookLibrary {
   constructor() {
-    this.apiUrl = 'https://labs.j-novel.club/app/v1/series/ascendance-of-a-bookworm/volumes?format=json';
+    this.apiUrl = 'https://labs.j-novel.club/app/v2/series/ascendance-of-a-bookworm/volumes?format=json';
     this.elements = {};
     this.volumes = [];
     this.isLoading = false;
