@@ -1,14 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Filtered Books by Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ascendance of a Bookworm - Digital Library</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <h1 class="bb">Bookworm Books</h1>
-  <div id="books">
-    
+  <div class="container">
+    <!-- Header Section -->
+    <header class="header">
+      <div class="header-content">
+        <div class="logo">
+          <i class="fas fa-book-open"></i>
+          <h1>Ascendance Library</h1>
+        </div>
+        <div class="header-subtitle">
+          <p>Discover the magical world of Miya Kazuki</p>
+        </div>
+      </div>
+      <div class="header-decoration"></div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Loading Spinner -->
+      <div id="loading" class="loading-container">
+        <div class="loading-spinner">
+          <div class="spinner"></div>
+          <p>Loading volumes...</p>
+        </div>
+      </div>
+
+      <!-- Error Message -->
+      <div id="error" class="error-container hidden">
+        <div class="error-content">
+          <i class="fas fa-exclamation-triangle"></i>
+          <h3>Oops! Something went wrong</h3>
+          <p>We couldn't load the book volumes. Please try again later.</p>
+          <button id="retry-btn" class="retry-btn">
+            <i class="fas fa-redo"></i>
+            Try Again
+          </button>
+        </div>
+      </div>
+
+      <!-- Books Grid -->
+      <div id="books" class="books-grid hidden">
+        <div class="section-header">
+          <h2>Available Volumes</h2>
+          <div class="volume-count">
+            <span id="volume-count">0</span> volumes available
+          </div>
+        </div>
+        <div id="books-container" class="books-container">
+          <!-- Books will be populated here -->
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2025 Ascendance Library. Data provided by J-Novel Club API.</p>
+    </footer>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>

@@ -1,5 +1,51 @@
 {
+  "name": "ascendance-library",
+  "version": "2.0.0",
+  "description": "A modern, professional web application for browsing Ascendance of a Bookworm volumes using the J-Novel Club API",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx live-server --port=3000 --open=/index.html",
+    "build": "echo 'Static site - no build required'",
+    "lint": "npx eslint script.js",
+    "format": "npx prettier --write *.{html,css,js}",
+    "test": "echo 'No tests specified'"
+  },
+  "keywords": [
+    "books",
+    "j-novel-club",
+    "ascendance-of-a-bookworm",
+    "api",
+    "web-app",
+    "library",
+    "frontend"
+  ],
+  "author": "Professional Developer",
+  "license": "MIT",
+  "homepage": "https://github.com/username/JNC-API#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/username/JNC-API.git"
+  },
+  "bugs": {
+    "url": "https://github.com/username/JNC-API/issues"
+  },
   "dependencies": {
     "node-fetch": "^3.3.1"
-  }
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "live-server": "^1.2.2",
+    "serve": "^14.2.1"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
 }
